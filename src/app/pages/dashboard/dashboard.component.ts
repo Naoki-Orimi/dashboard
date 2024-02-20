@@ -8,6 +8,7 @@ import Chart from 'chart.js';
     templateUrl: 'dashboard.component.html'
 })
 
+// 案件リストを表示するページ
 export class DashboardComponent implements OnInit{
 
   public canvas : any;
@@ -15,6 +16,15 @@ export class DashboardComponent implements OnInit{
   public chartColor;
   public chartEmail;
   public chartHours;
+  // 案件タイトル
+  public projectList = [
+    {name: 'POSレジアプリのCRM設計、開発', index: 1, startDate: '2024-08-01 00:00:00', endDate: '2024-12-01 00:00:00'},
+    {name: '自社ECサイトの保守・開発', index: 2, startDate: '2024-08-01 00:00:00', endDate: '2024-12-01 00:00:00'},
+    {name: '都内私立大学の出願・入学システムの設計、開発', index: 3, startDate: '2024-08-01 00:00:00', endDate: '2024-12-01 00:00:00'},
+    {name: '', index: 4, startDate: '2024-08-01 00:00:00', endDate: '2024-12-01 00:00:00'},
+    {name: '', index: 5, startDate: '2024-08-01 00:00:00', endDate: '2024-12-01 00:00:00'},
+  ];
+
 
     ngOnInit(){
       this.chartColor = "#FFFFFF";

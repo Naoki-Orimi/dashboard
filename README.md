@@ -1,3 +1,8 @@
+## このモックを使用して作成するもの
+
+自身のエンジニアのキャリアを見せられるダッシュボードの作成
+
+
 # [Paper Dashboard Angular](https://www.creative-tim.com/product/paper-dashboard-angular)
 ![version](https://img.shields.io/badge/version-2.4.0-blue.svg) ![license](https://img.shields.io/badge/license-MIT-blue.svg) [![GitHub issues open](https://img.shields.io/github/issues/creativetimofficial/paper-dashboard-angular.svg?maxAge=2592000)]() [![GitHub issues closed](https://img.shields.io/github/issues-closed-raw/creativetimofficial/paper-dashboard-angular.svg?maxAge=2592000)]()  [![Chat](https://img.shields.io/badge/chat-on%20discord-7289da.svg)](https://discord.gg/E4aHAQy)
 
