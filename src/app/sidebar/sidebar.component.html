@@ -15,6 +15,7 @@
             <a [routerLink]="[menuItem.path]">
                 <i class="nc-icon {{menuItem.icon}}"></i>
                 <p>{{menuItem.title}}</p>
+                <span *ngIf="menuItem.title !== '案件'">※近日公開予定</span>
             </a>
         </li>
     </ul>

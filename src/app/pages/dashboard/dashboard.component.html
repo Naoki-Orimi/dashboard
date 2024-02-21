@@ -1,5 +1,6 @@
 <!-- 案件カードリスト -->
 <div class="row">
+  <!-- col-lg-3は、PC画面幅で12分割のうち3の割合、col-md-6はタブレットで幅12分割のうち6の割合、smはスマホといった感じに設定している。 -->
   <div *ngFor="let project of projectList" class="col-lg-3 col-md-6 col-sm-6 project-card">
     <div class="card card-stats">
       <div class="card-body ">
@@ -12,8 +13,7 @@
           <div class="col-7 col-md-8">
             <div class="numbers">
               <p class="card-category">案件1</p>
-              <p class="card-title">{{project.name}}
-                <p>
+              <p class="card-title">{{project.name}}<p>
             </div>
           </div>
         </div>
@@ -32,12 +32,13 @@
   <div class="col-md-12">
     <div class="card ">
       <div class="card-header ">
-        <h5 class="card-title">案件名</h5>
+        <h5 class="card-title">案件説明</h5>
       </div>
       <div class="card-body ">
         <!-- <canvas id=chartHours width="400" height="100"></canvas> -->
         <h5 class="card-title">案件の内容をここに書きたい。<br>
-          何かしらここに書きたい。  
+          何かしらここに書きたい。書いていく。<br>
+          絶対書く。
         </h5>
       </div>
       <div class="card-footer ">
@@ -50,21 +51,24 @@
   </div>
 </div>
 <div class="row">
-  <div class="col-md-4">
+  <div class="col-md-8">
     <div class="card ">
       <div class="card-header ">
-        <h5 class="card-title">Email Statistics</h5>
-        <p class="card-category">Last Campaign Performance</p>
+        <h5 class="card-title">スキルセット</h5>
       </div>
       <div class="card-body ">
-        <canvas id="chartEmail"></canvas>
+        <h5>
+          <i class="fa fa-circle text-primary"></i> TypeScript<br>
+          <i class="fa fa-circle text-warning"></i> Angular <br>
+          <i class="fa fa-circle text-danger"></i> PHP
+        </h5>
       </div>
       <div class="card-footer ">
         <div class="legend">
-          <i class="fa fa-circle text-primary"></i> Opened
-          <i class="fa fa-circle text-warning"></i> Read
-          <i class="fa fa-circle text-danger"></i> Deleted
-          <i class="fa fa-circle text-gray"></i> Unopened
+          <i class="fa fa-circle text-primary"></i> 10年以上
+          <i class="fa fa-circle text-warning"></i> 5年〜10年
+          <i class="fa fa-circle text-danger"></i> 3年〜5年
+          <i class="fa fa-circle text-gray"></i> 3年未満
         </div>
         <hr>
         <div class="stats">
@@ -73,14 +77,13 @@
       </div>
     </div>
   </div>
-  <div class="col-md-8">
+  <div class="col-md-4">
     <div class="card card-chart">
       <div class="card-header">
-        <h5 class="card-title">NASDAQ: AAPL</h5>
-        <p class="card-category">Line Chart with Points</p>
+        <h5 class="card-title">アピールポイント</h5>
       </div>
       <div class="card-body">
-        <canvas id="speedChart" width="400" height="100"></canvas>
+        この案件では設計を頑張りました！
       </div>
       <div class="card-footer">
         <div class="chart-legend">
