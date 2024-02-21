@@ -1,5 +1,6 @@
+<!-- 案件カードリスト -->
 <div class="row">
-  <div class="col-lg-3 col-md-6 col-sm-6">
+  <div *ngFor="let project of projectList" class="col-lg-3 col-md-6 col-sm-6 project-card">
     <div class="card card-stats">
       <div class="card-body ">
         <div class="row">
@@ -11,7 +12,7 @@
           <div class="col-7 col-md-8">
             <div class="numbers">
               <p class="card-category">案件1</p>
-              <p class="card-title">POSレジアプリのCRM機能
+              <p class="card-title">{{project.name}}
                 <p>
             </div>
           </div>
@@ -20,104 +21,29 @@
       <div class="card-footer ">
         <hr>
         <div class="stats">
-          <i class="fa fa-calendar-o"></i> 2024/08/01 ~ 2024/12/01
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="col-lg-3 col-md-6 col-sm-6">
-    <div class="card card-stats">
-      <div class="card-body ">
-        <div class="row">
-          <div class="col-5 col-md-4">
-            <div class="icon-big text-center icon-warning">
-              <i class="nc-icon nc-cart-simple"></i>
-            </div>
-          </div>
-          <div class="col-7 col-md-8">
-            <div class="numbers">
-              <p class="card-category">案件2</p>
-              <p class="card-title">自社ECサイト
-                <p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="card-footer ">
-        <hr>
-        <div class="stats">
-          <i class="fa fa-calendar-o"></i> 2024/08/01 ~ 2024/12/01
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="col-lg-3 col-md-6 col-sm-6">
-    <div class="card card-stats">
-      <div class="card-body ">
-        <div class="row">
-          <div class="col-5 col-md-4">
-            <div class="icon-big text-center icon-warning">
-              <i class="nc-icon nc-vector text-danger"></i>
-            </div>
-          </div>
-          <div class="col-7 col-md-8">
-            <div class="numbers">
-              <p class="card-category">案件3</p>
-              <p class="card-title">都内私立大学の出願・入学システム
-                <p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="card-footer ">
-        <hr>
-        <div class="stats">
-          <i class="fa fa-calendar-o"></i> 2024/08/01 ~ 2024/12/01
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="col-lg-3 col-md-6 col-sm-6">
-    <div class="card card-stats">
-      <div class="card-body ">
-        <div class="row">
-          <div class="col-5 col-md-4">
-            <div class="icon-big text-center icon-warning">
-              <i class="nc-icon nc-favourite-28 text-primary"></i>
-            </div>
-          </div>
-          <div class="col-7 col-md-8">
-            <div class="numbers">
-              <p class="card-category">案件4</p>
-              <p class="card-title">何かの案件を書く
-                <p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="card-footer ">
-        <hr>
-        <div class="stats">
-          <i class="fa fa-calendar-o"></i> 2024/08/01 ~ 2024/12/01
+          <i class="fa fa-calendar-o"></i> {{project.startDate}} ~ {{project.endDate}}
         </div>
       </div>
     </div>
   </div>
 </div>
+<!-- 案件の説明を入れたい。案件リストを押したら動的に表示されるようにしたい。 -->
 <div class="row">
   <div class="col-md-12">
     <div class="card ">
       <div class="card-header ">
-        <h5 class="card-title">Users Behavior</h5>
-        <p class="card-category">24 Hours performance</p>
+        <h5 class="card-title">案件名</h5>
       </div>
       <div class="card-body ">
-        <canvas id=chartHours width="400" height="100"></canvas>
+        <!-- <canvas id=chartHours width="400" height="100"></canvas> -->
+        <h5 class="card-title">案件の内容をここに書きたい。<br>
+          何かしらここに書きたい。  
+        </h5>
       </div>
       <div class="card-footer ">
         <hr>
         <div class="stats">
-          <i class="fa fa-history"></i> Updated 3 minutes ago
+          <!-- <i class="fa fa-history"></i> Updated 3 minutes ago -->
         </div>
       </div>
     </div>

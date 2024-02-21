@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Dayjs } from 'dayjs';
 import Chart from 'chart.js';
 
 
@@ -21,12 +22,18 @@ export class DashboardComponent implements OnInit{
     {name: 'POSレジアプリのCRM設計、開発', index: 1, startDate: '2024-08-01 00:00:00', endDate: '2024-12-01 00:00:00'},
     {name: '自社ECサイトの保守・開発', index: 2, startDate: '2024-08-01 00:00:00', endDate: '2024-12-01 00:00:00'},
     {name: '都内私立大学の出願・入学システムの設計、開発', index: 3, startDate: '2024-08-01 00:00:00', endDate: '2024-12-01 00:00:00'},
-    {name: '', index: 4, startDate: '2024-08-01 00:00:00', endDate: '2024-12-01 00:00:00'},
-    {name: '', index: 5, startDate: '2024-08-01 00:00:00', endDate: '2024-12-01 00:00:00'},
+    {name: '動画配信サービス開発', index: 4, startDate: '2024-08-01 00:00:00', endDate: '2024-12-01 00:00:00'},
   ];
 
 
     ngOnInit(){
+      // デフォルトで入っている、変なグラフ（別にいらない）
+      this.createDefaultChart();
+      
+      
+    }
+  
+    private createDefaultChart() {
       this.chartColor = "#FFFFFF";
 
       this.canvas = document.getElementById("chartHours");
